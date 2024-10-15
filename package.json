@@ -1,0 +1,11 @@
+{
+  "name": "video-resource",
+  "version": "1.0.0",
+  "description": "爬取视频资源",
+  "main": "index.js",
+  "scripts": {
+    "run": "python3 main.py"
+  },
+  "author": "SmallTeddy",
+  "license": "ISC"
+}
