@@ -26,6 +26,16 @@
 pip install requests json time
 ```
 
+运行：
+
+```bash
+# python 直接运行
+python main.py
+
+# 执行 package 命令
+npm run run
+```
+
 ## 项目结构
 
 项目包含以下脚本：
