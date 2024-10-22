@@ -33,7 +33,7 @@ pip install requests json time
 python main.py
 
 # 执行 package 命令
-npm run run
+npm run search
 ```
 
 ## 项目结构

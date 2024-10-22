@@ -4,7 +4,7 @@
   "description": "爬取视频资源",
   "main": "index.js",
   "scripts": {
-    "run": "python3 main.py"
+    "search": "python3 main.py"
   },
   "author": "SmallTeddy",
   "license": "ISC"
