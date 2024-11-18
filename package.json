@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "search-by-javascript": "node main.js",
-    "search-by-python": "python3 main.py"
+    "search-by-python": "python3 ./src/main.py",
+    "search-by-javascript": "node ./src/main.js",
+    "search-by-rust": "cargo run"
+    
   },
   "author": "SmallTeddy",
   "license": "ISC",
