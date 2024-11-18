@@ -10,6 +10,8 @@
 
 本项目旨在使用Python编程语言和BeautifulSoup库来爬取公开可用的影视资源信息。通过此项目，学习者可以了解网络爬虫的基本原理、如何解析HTML页面以及如何以结构化的方式存储数据。
 
+> 当前搜索 `python` 版本搜索资源更全一些。
+
 <details open> 
   <summary><h2>📘 python 运行</h2></summary>
 
@@ -40,6 +42,8 @@ python main.py
 # 执行 package 命令
 npm run search-by-python
 ```
+
+![python](./assets/python.png)
 
 </details>
 
@@ -73,6 +77,8 @@ node main.js
 npm run search-by-node
 ```
 
+![javascript](./assets/javascript.png)
+
 </details>
 
 <details open> 
@@ -98,6 +104,10 @@ cargo run
 npm run search-by-rust
 ```
 
+![rust](./assets/rust.png)
+
 </details>
+
+---
 
 > 请记住，这只是一个模板，实际的爬虫项目需要根据目标网站的具体结构进行相应的调整。此外，实际使用时还应考虑到法律和道德问题。
