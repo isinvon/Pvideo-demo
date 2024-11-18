@@ -79,11 +79,13 @@ def showFinalList():
     for item in final_data_list:
         new_item = item.copy()
         
-        new_item.pop('id', None)
-        new_item.pop('isTop', None)
-        
         new_item['资源名称'] = new_item.pop('question', None)
         new_item['资源链接'] = new_item.pop('answer', None)
+        
+        new_item.pop('id', None)
+        new_item.pop('isTop', None)
+        new_item.pop('question', None)
+        new_item.pop('answer', None)
         
         processed_data.append(new_item)
         
