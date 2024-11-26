@@ -9,7 +9,7 @@
     "py-vue-run": "concurrently \"vue-cli-service serve\" \"python src/main.py\"",
     "py-vue-build-exe": "vue-cli-service build && python build_exe.py",
     "py-vue-build-app": "vue-cli-service build && python build_app.py",
-    "py-vue-build-dmg": "vue-cli-service build && python build_dmg.py",
+    "py-vue-build-dmg": "vue-cli-service build  && python build_app.py && python build_dmg.py",
     "py-run": "python src/main.py",
     "vue-run": "vue-cli-service serve",
     "vue-build": "vue-cli-service build"
