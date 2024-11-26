@@ -1,8 +1,8 @@
 """ 
-@File    : build.py
+@File    : build_exe.py
 @Time    : 2024年11月26日13:46:44
 @Author  : sinvon
-@Desc    : 构建打包脚本
+@Desc    : 构建 .exe 文件 - Windows
 """
 import subprocess
 import os
@@ -26,3 +26,5 @@ command = [
 
 # 执行 PyInstaller 命令
 subprocess.run(command)
+
+print(f"Successfully created {os.path.join(output_dir, 'Pvideo-demo.exe')}")
