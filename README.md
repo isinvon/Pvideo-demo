@@ -24,7 +24,11 @@
 <img src="./assets/pvideo_demo_run_image_1.gif" width="800" />
 <img src="./assets/pvideo_demo_run_image_2.png" width="800" />
 
-在开始之前，请确保你的开发环境已经安装了以下软件和库：
+## 🫶 安装方式
+
+<font color="#83a57a">
+在 🔗 <a href="https://github.com/isinvon/Pvideo-demo/releases">Release</a> 中下载最新版本即可。
+</font>
 
 ## 🛠️ 运行前所需环境
 
