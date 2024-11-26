@@ -6,8 +6,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "py_vue_run": "concurrently \"vue-cli-service serve\" \"python src/main.py\"",
-    "py_vue_build": "vue-cli-service build && python build.py",
+    "py-vue-run": "concurrently \"vue-cli-service serve\" \"python src/main.py\"",
+    "py-vue-build": "vue-cli-service build && python build.py",
+    "py-run": "python src/main.py",
     "vue-run": "vue-cli-service serve",
     "vue-build": "vue-cli-service build"
   },
