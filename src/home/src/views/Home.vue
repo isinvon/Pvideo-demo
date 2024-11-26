@@ -32,7 +32,7 @@
       border
     >
       <!-- 资源名称列 -->
-      <el-table-column label="资源名称" prop="资源名称" width="300">
+      <el-table-column label="资源名称" prop="资源名称" width="350">
         <template #default="scope">
           <span class="movie-title">{{ scope.row.资源名称 }}</span>
         </template>
