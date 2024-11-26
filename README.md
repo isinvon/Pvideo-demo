@@ -1,6 +1,6 @@
 # 影视资源 GUI 应用
 
-## Contributors
+## 🥳Contributors
 
 - Original Author: [SmallTeddy](https://github.com/SmallTeddy)
 - Original Repo: [video-resource](https://github.com/SmallTeddy/video-resource)
@@ -69,9 +69,9 @@ pip install -r requirements.txt
 pnpm install
 ```
 
-### ⚙️ 运行项目
+## ⚙️ 运行项目
 
-#### 1、运行 python
+### 1、运行 python
 
 ```bash
 pnpm run py-run
@@ -83,19 +83,19 @@ pnpm run py-run
 python main.py
 ```
 
-#### 2、运行 vue
+### 2、运行 vue
 
 ```bash
 pnpm run vue-run
 ```
 
-#### 3、也可以 python 和 vue 同时运行
+### 3、也可以 python 和 vue 同时运行
 
 ```bash
 pnpm run py-vue-run
 ```
 
-### 🍃 只构建 vue 项目
+## 🍃 只构建 vue 项目
 
 ```bash
 pnpm run vue-build
