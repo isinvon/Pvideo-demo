@@ -17,7 +17,7 @@ command = [
     'pyinstaller',
     '--windowed',  # 生成 macOS 应用程序包
     '--noconsole',
-    f'--add-data={dist_dir};dist',  # 添加 dist 目录及其内容
+    f'--add-data={dist_dir}:dist',  # 添加 dist 目录及其内容，注意中间没有空格
     '--name', 'Pvideo-demo',  # 可执行文件名称
     '--workpath', os.path.join(work_dir, 'build'),  # 指定临时文件目录
     '--distpath', output_dir,  # 指定输出目录
