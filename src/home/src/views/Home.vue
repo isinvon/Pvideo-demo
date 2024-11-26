@@ -1,11 +1,14 @@
 <template>
   <div class="container scroll-container">
     <!-- 左上角的1/4圆按钮 -->
-    <button class="quarter-circle-btn" @click="onButtonClick">
-      <span class="icon-container">
-        <Icon icon="grommet-icons:github" />
-      </span>
-    </button>
+    
+    <a href="https://github.com/isinvon/Pvideo-demo" target="_blank" class="github-link">
+      <button class="quarter-circle-btn">
+        <span class="icon-container">
+          <Icon icon="grommet-icons:github" />
+        </span>
+      </button>
+    </a>
 
     <el-input
       v-model="searchQuery"
@@ -144,11 +147,6 @@ const splitAndParseLink = (links) => {
 const updateTableKey = () => {
   tableKey.value++;
 };
-
-// 跳转到百度
-const onButtonClick = () => {
-  window.open("https://github.com/isinvon/Pvideo-demo", "_blank");
-}  
 
 onMounted(() => {
   window.addEventListener("resize", updateTableKey);
