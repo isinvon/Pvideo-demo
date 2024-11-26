@@ -105,10 +105,26 @@ pnpm run py-vue-run
 pnpm run vue-build
 ```
 
-## 🦄 构建并打包成 exe
+## 🦄 构建并打包
 
-```build
-pnpm run py-vue-build
+### 1、构建打包成 exe (需要 windows 系统)
+
+```bash
+pnpm run py-vue-build-exe
 ```
 
-之后就可以在 output 的文件夹中找到打包好的 exe 文件了，双击 exe 启动即可。
+### 2、构建打包成 dmg 或者 app (需要 macOS 系统)
+
+dmg:
+
+```bash
+pnpm run py-vue-build-dmg
+```
+
+app:
+
+```bash
+pnpm run py-vue-build-app
+```
+
+之后就可以在 output 的文件夹中找到打包好的 exe、dmg\app 文件了，双击启动即可。
