@@ -51,14 +51,22 @@
 构建 python 虚拟环境
 
 ```bash
-pip -m venv venv
+python -m venv .venv
 ```
 
 激活 python 虚拟环境(windows)
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
+
+激活 python 虚拟环境(linux/macos)
+
+```
+source venv/bin/activate
+```
+
+
 
 安装依赖
 
