@@ -14,13 +14,12 @@
 
 ## 🔧 项目概述
 
-本项目旨在使用 Python 编程语言和 BeautifulSoup 库来爬取公开可用的影视资源信息。通过此项目，学习者可以了解网络爬虫的基本原理、如何解析 HTML 页面以及如何以结构化的方式存储数据。
-
-> 当前搜索 `python` 版本搜索资源更全一些。
+本项目旨在使用爬虫技术爬取公开可用的影视资源信息。通过此项目，学习者可以了解网络爬虫的基本原理、如何解析 HTML 页面以及如何以结构化的方式存储数据。
 
 ## 🖼️ 运行显示
 
 <!-- 图片显示 -->
+
 <img src="./assets/pvideo_demo_run_image_1.gif" width="800" />
 <img src="./assets/pvideo_demo_run_image_2.png" width="800" />
 
