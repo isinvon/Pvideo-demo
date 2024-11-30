@@ -6,6 +6,8 @@
 
 该项目仅供学习和研究使用，不得用于商业或非法用途。在使用网络爬虫时，请确保遵守目标网站的`robots.txt`文件规定，尊重版权和隐私政策，不要对网站服务器造成不必要的负担。
 
+## 🔗 感谢[https://github.com/isinvon/Pvideo-demo](https://github.com/isinvon/Pvideo-demo)提供的GUI界面
+
 ## 🔧 项目概述
 
 本项目旨在使用Python编程语言和BeautifulSoup库来爬取公开可用的影视资源信息。通过此项目，学习者可以了解网络爬虫的基本原理、如何解析HTML页面以及如何以结构化的方式存储数据。
