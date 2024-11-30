@@ -6,7 +6,7 @@
 
 该项目仅供学习和研究使用，不得用于商业或非法用途。在使用网络爬虫时，请确保遵守目标网站的`robots.txt`文件规定，尊重版权和隐私政策，不要对网站服务器造成不必要的负担。
 
-## 🔗 感谢[https://github.com/isinvon/Pvideo-demo](https://github.com/isinvon/Pvideo-demo)提供的GUI界面
+## 🔗 感谢 [isinvon](https://github.com/isinvon/Pvideo-demo) 提供的 GUI 界面
 
 ## 🔧 项目概述
 
