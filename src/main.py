@@ -113,9 +113,36 @@ def getSearchUpYunSo():
     
     print(final_data_list)
 
-processed_data = []
+def getXshyun():
+    try:
+        # 发送请求获取数据
+        response = requests.get(f'https://jx.xshyun.top/api.php?wd={name}')
+        response.raise_for_status()  # 检查请求是否成功
+        data_list = response.json().get('list', [])
+        
+        xshyun_final_data_list = []
+        
+        for item in data_list:
+            # 发送请求获取详细信息
+            data_info = requests.get(f'https://jx.xshyun.top/api.php?ids={item["vod_id"]}&source={item["source"]}')
+            data_info.raise_for_status()  # 检查请求是否成功
+            
+            info = data_info.json().get('list', [])
+            if info:  # 确保 info 不为空
+                xshyun_final_data_list.append(info[0])  # 只添加第一个元素
+        
+        qa_list = [{'question': item['vod_name'], 'answer': item['vod_play_url']} for item in xshyun_final_data_list]
+        for item in qa_list:
+            item['answer'] = item['answer'].split('$')
+        final_data_list.extend(qa_list)
+    
+    except requests.RequestException as e:
+        print(f"请求错误: {e}")
+    except Exception as e:
+        print(f"发生错误: {e}")
 
 def showFinalList():
+    processed_data = []
     for item in final_data_list:
         new_item = item.copy()
         
@@ -138,5 +165,6 @@ getXiaoyu()
 getSearchX()
 
 # getSearchUpYunSo()
+getXshyun()
 
 showFinalList()
