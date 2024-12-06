@@ -6,7 +6,9 @@
 
 该项目仅供学习和研究使用，不得用于商业或非法用途。在使用网络爬虫时，请确保遵守目标网站的`robots.txt`文件规定，尊重版权和隐私政策，不要对网站服务器造成不必要的负担。
 
-## 🔗 感谢 [isinvon](https://github.com/isinvon/Pvideo-demo) 提供的 GUI 界面
+## 🔗 十分感谢 [isinvon](https://github.com/isinvon) 提供的 GUI 界面，项目地址：[Pvideo-demo](https://github.com/isinvon/Pvideo-demo)
+
+## 🆕 python 版本更新了 m3u8的在线观看爬虫 推荐使用 [m3u8-player](https://m3u8-player.com/) 复制链接在线直接观看
 
 ## 🔧 项目概述
 
