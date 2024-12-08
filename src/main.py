@@ -8,7 +8,7 @@ import os
 import sys
 import webview
 
-from src.service.VideoList import VideoList
+from service.VideoList import VideoList
 
 def get_resource_path(relative_path):
     """ Get the absolute path to the resource, works for dev and for PyInstaller """
