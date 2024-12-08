@@ -53,6 +53,13 @@
           <span v-else-if="link.includes('xunlei')">迅雷: {{ link }}</span>
           <span v-else-if="link.includes('alispanan')">阿里云: {{ link }}</span>
           <span v-else-if="link.includes('quark')">夸克: {{ link }}</span>
+          <span v-else-if="link.includes('m3u8') && index === 0">
+            <p>复制链接到<a href="https://m3u8-player.com/" target="_blank" style="color: #4a90e2">https://m3u8-player.com/</a>输入框即可播放</p>
+          </span>
+            <span v-else-if="link.includes('m3u8') && index === 0">
+            {{ link }}
+          </span>
+          <span v-else-if="link.includes('m3u8') && index !== 0">{{ link }}</span>
           <span v-else>其他: {{ link }}</span>
           </el-link>
         </template>
