@@ -180,5 +180,5 @@ class VideoList:
 
             processed_data.append(new_item)
 
-        print(self._formatListData(processed_data))  # debug
-        # return self._formatListData(processed_data)
+        # print(self._formatListData(processed_data))  # debug
+        return self._formatListData(processed_data) # 返回的虽然是json,但是前端js通过通信通道获取的时候还是String,所以前端还需要转换成json才能使用
