@@ -95,7 +95,8 @@ const searchMovies = async () => {
   if (query) {
     startLoading(); // 启动加载动画
     try {
-      const movieList = await getMovieList(query);
+      // 从后端调用MovieList
+      const movieList = JSON.parse(await pywebview.api.showFinalList(name = query))
       filteredMovies.value = movieList; // 更新电影列表
       if (movieList.length === 0) {
         filteredMovies.value = []; // 没有匹配的电影时清空列表
