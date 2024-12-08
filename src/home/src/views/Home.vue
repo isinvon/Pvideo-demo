@@ -82,7 +82,6 @@
  * @create 2024年11月26日02:04:34
 */
 import { onMounted, onUnmounted, ref } from "vue";
-import { getMovieList } from "../service/getMovieList";
 import { showNotification } from "../utils/notification.js";
 import { Icon } from '@iconify/vue';
 
@@ -95,7 +94,6 @@ const tableKey = ref(0); // 用于更新表格
 const isLoading = ref(false); // 控制加载动画
 const loadingText = ref("加载中"); // 动态加载文本
 let loadingInterval = null; // 控制动态点的定时器
-const isHovered = ref(false);// 定义悬浮状态
 
 const searchMovies = async () => {
   const query = searchQuery.value.trim();
@@ -139,7 +137,6 @@ const stopLoading = () => {
   loadingInterval = null;
 };
 
-// 解析资源链接
 const splitAndParseLink = (links) => {
   // 如果links是字符串
   if (typeof links === 'string') {
