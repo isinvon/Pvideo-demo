@@ -8,7 +8,7 @@ import os
 import sys
 import webview
 
-from service.VideoList import VideoList
+from src.service.VideoList import VideoList
 
 def get_resource_path(relative_path):
     """ Get the absolute path to the resource, works for dev and for PyInstaller """
@@ -25,8 +25,8 @@ def start_webview():
     vue_dist_path = get_resource_path('dist')
     vue_dist_path = vue_dist_path.replace("\\", "/")
     print(f"Vue dist path: {vue_dist_path}")  # 添加调试信息
-    # webview.create_window('Pvideo-demo', f'file://{vue_dist_path}/index.html',text_select=True,width=1110,height=780,js_api=api)
-    webview.create_window('Pvideo-demo','http://localhost:8080',text_select=True,width=1110,height=780,js_api=api)
+    webview.create_window('Pvideo-demo', f'file://{vue_dist_path}/index.html',text_select=True,width=1110,height=780,js_api=api)
+    # webview.create_window('Pvideo-demo','http://localhost:8080',text_select=True,width=1110,height=780,js_api=api)
     webview.start()
 
 if __name__ == '__main__':

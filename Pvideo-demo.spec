@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['D:\\CodeProject\\PYproject\\PyTools\\Pvideo-demo\\src\\main.py'],
+    ['C:\\Users\\sinvon\\Desktop\\mycode\\Pvideo-demo\\src\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[('D:\\CodeProject\\PYproject\\PyTools\\Pvideo-demo\\dist', 'dist')],
+    datas=[('C:\\Users\\sinvon\\Desktop\\mycode\\Pvideo-demo\\dist', 'dist')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
