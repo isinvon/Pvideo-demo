@@ -1,8 +1,10 @@
 """ 
-@File    : VideoList.py
-@Time    : 2024年11月26日13:46:44
-@Author  : sinvon
-@Desc    : 爬取影视返回列表
+@File           : VideoList.py
+@Time           : 2024年11月26日13:46:44
+@Desc           : 爬取影视返回列表
+@OriginAuthor   : SmallTeddy <https://github.com/SmallTeddy>
+@ModyfyAuthor   : Sinvon
+@Modify         : 2024年12月8日16:10:15
 """
 import requests
 import time
