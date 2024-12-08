@@ -12,7 +12,7 @@ from PIL import Image
 from io import BytesIO
 
 
-class Api:
+class VideoList:
 
     def __init__(self):
         current_timestamp = int(time.time() * 1000)
