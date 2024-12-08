@@ -134,14 +134,25 @@ const stopLoading = () => {
 
 // 解析资源链接
 const splitAndParseLink = (links) => {
-  return links
-    .split("链接：") // 按照 "链接：" 分割
-    .filter((link) => link.trim()) // 去除空字符串
-    .map((link) => {
-      const match = link.match(/https?:\/\/[^\s]+/); // 匹配有效的 URL
-      return match ? match[0] : null; // 返回 URL 或 null
-    })
-    .filter(Boolean); // 去除 null 值
+  // 如果links是字符串
+  if (typeof links === 'string') {
+     // 使用正则表达式提取所有的 https 链接
+    const regex = /https:\/\/[^\s]+/g;
+    // 匹配所有符合条件的链接，并返回一个数组
+    const result = links.match(regex);
+    return result || []; // 如果没有找到有效链接，返回空数组
+  }
+  // 如果links是数组
+  if (Array.isArray(links)) {
+    // 遍历数组，提取每个链接
+    return links.flatMap(link => {
+      // 使用正则表达式提取所有的 https 链接
+      const regex = /https:\/\/[^\s]+/g;
+      // 匹配所有符合条件的链接，并返回一个数组
+      return link.match(regex) || [];
+    });
+  }
+  return [];
 };
 
 // 防止 ResizeObserver 警告
